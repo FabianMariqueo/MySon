@@ -1,8 +1,8 @@
 FROM node:10-alpine
 
-RUN mkdir -p /front/node_modules && chown -R node:node /front
+RUN mkdir -p /app/node_modules && chown -R node:node /app
 
-WORKDIR /front
+WORKDIR /app
 
 COPY --chown=node:node . .
 
